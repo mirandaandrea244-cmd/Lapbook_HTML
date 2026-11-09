@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lapbook Web: HTML, CSS, JS, Jinja y SQL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Pegatinas del escritorio -->
+  <div class="stk s1">Aprende<br>Crea<br>Explora<br><b>¡Tu lapbook!</b></div>
+  <span class="stk s2">✂️</span><span class="stk s3">✏️</span><span class="stk s4">📎</span><span class="stk s5">🖍️</span>
+
+  <h1 id="mega" class="mega">LAPBOOK WEB</h1>
+  <p class="sub">HTML · CSS · JavaScript · Jinja · SQL</p>
+  <p class="hint" id="hint">👇 Toca la carpeta para abrirla</p>
+
+  <!-- LA CARPETA -->
+  <div class="lap" id="lap">
+    <div class="inside">
+      <!-- Columna izquierda: bolsitas -->
+      <div class="col"><h3 class="lab">🎒 Mis bolsitas</h3><div id="pockets"></div></div>
+
+      <!-- Columna central -->
+      <div class="col mid">
+        <div class="ribbon">EL MUNDO WEB</div>
+        <div class="browser"><div class="bar"><i></i><i></i><i></i></div><div class="screen">🌍<span>😊</span></div></div>
+        <h3 class="lab">📖 El viaje de una página</h3>
+        <div class="fold" id="fold"></div>
+      </div>
+
+      <!-- Columna derecha: ruleta, sobres -->
+      <div class="col">
+        <h3 class="lab">🎡 Ruleta</h3>
+        <div class="wheelwrap"><div class="wheel" id="wheel"></div><div class="pin">▼</div></div>
+        <button class="run" id="spin">¡Girar!</button>
+        <button class="env" id="reto">✉️ Retos</button>
+        <button class="env pink" id="comp">💌 Mi compromiso</button>
+        <div class="note" id="note" hidden></div>
+      </div>
+    </div>
+
+    <!-- Tapas de la carpeta -->
+    <div class="door l"><div><h2>Mi<br>LAPBOOK</h2><p>de programación web</p></div></div>
+    <div class="door r"><div><div class="huge">💻</div><p>¡Ábreme! 👆</p></div></div>
+  </div>
+  <p class="center"><button class="run" id="shut">↩ Cerrar carpeta</button></p>
+
+  <!-- MINI LIBRO (se abre al tocar una bolsita) -->
+  <div class="modal" id="modal" hidden>
+    <div class="bookm">
+      <button class="x" id="x" aria-label="Cerrar">✕</button>
+      <div class="spread"><aside class="pg left" id="pl"></aside><article class="pg right" id="pr"></article></div>
+      <div class="nav"><button class="arr" id="prev">◀</button><div id="dots"></div><button class="arr" id="next">▶</button></div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
